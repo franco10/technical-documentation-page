@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+
+        <title>Technical Documentation Page</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    </head>
+
+
+
+    <body>
+        <nav id="navbar">
+            <header>Python Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#variables">Variables</a></li>
+                <li><a class="nav-link" href="#print_and_input">Print and Input</a></li>
+                <li><a class="nav-link" href="#control_structures">Control Structures</a></li>
+                <li><a class="nav-link" href="#functions">Functions</a></li>
+                <li></li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+
+            <section class="main-section" id="introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        Python is an interpreted high-level general-purpose programming language.
+                        Its design philosophy emphasizes code readability with its use of significant indentation.
+                        Its language constructs as well as its object-oriented approach aim to help programmers
+                        write clear, logical code for small and large-scale projects.
+                    </p>
+                    <p>
+                        Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms,
+                        including structured (particularly, procedural), object-oriented and functional programming.
+                        It is often described as a "batteries included" language due to its comprehensive standard library.
+                    </p>
+                    <p>
+                        The language's core philosophy is summarized in the document The Zen of Python (PEP 20), which includes aphorisms such as:
+                    </p>
+                    <ul>
+                        <li>Beautiful is better than ugly.</li>
+                        <li>Explicit is better than implicit.</li>
+                        <li>Simple is better than complex.</li>
+                        <li>Complex is better than complicated.</li>
+                        <li>Readability counts.</li>
+                    </ul>
+                    <p>
+                        Python was designed by Guido van Rossum.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="variables">
+                <header>Variables</header>
+                <article>
+                    <p>In Python there are different types of variables.</p>
+
+                    <h2>Integer number:</h2>
+                    <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+                    <code>int_variable = 12</code>
+
+                    <h2>Floating-point number:</h2>
+                    <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+                    <code>int_variable = 12.5</code>
+
+                    <h2>String:</h2>
+                    <p> Strings are arrays of bytes representing Unicode characters.</p>
+                    <code>str_variable = "Hello world"</code>
+
+                    <h2>Boolean value:</h2>
+                    <p>It is a variable that can only take two values: true or false.</p>
+                    <code>
+                        bool_value_1 = True<br>
+                        bool_value_1 = False
+                    </code>
+
+                    <h2>Set:</h2>
+                    <p>A set is an unordered collection of items. Every set element is unique (no duplicates) and must be immutable (cannot be changed).</p>
+                    <code>aset = {'blue', 'red', 'yellow'}</code>
+
+                    <h2>List:</h2>
+                    <p>List items are ordered, changeable, and allow duplicate values.</p>
+                    <code>alist = ['blue', 'red', 'yellow', 'blue']</code>
+
+                    <h2>Tuple:</h2>
+                    <p>Tuple items are ordered, unchangeable, and allow duplicate values.</p>
+                    <code>atuple = ('blue', 'red', 'yellow', 'blue')</code>
+
+                    <h2>Dictionary</h2>
+                    <p>
+                        Dictionaries are used to store data values in key:value pairs.<br>
+                        Dictionary items are ordered, changeable, and does not allow duplicates.
+                    </p>
+                    <code>
+                        adict = {
+                        <p class="tab">'firstname': 'Franco',</p>
+                        <p class="tab">'lastname': 'Salinas',</p>
+                        <p class="tab">'course': 'Web development',</p>
+                        <p class="tab">'division': 2</p>
+                        <p class="tab">}</p>
+                    </code>
+
+                </article>
+            </section>
+
+            <section class="main-section" id="print_and_input">
+                <header>Print and Input</header>
+                <article>
+
+                    <h2>print function</h2>
+                    <p>Used to print on screen.</p>
+                    <p>There are different ways to use this function.</p>
+                    <code>
+                        print("Value 1:", value_1, "\nValue 2:", value_2)
+                    </code>
+                    <code>
+                        print("Value 1: {}\nValue 2 {}".format(value_1, value_2))
+                    </code>
+                    <code>
+                        print(f'Value 1: {value_1}\nValue 2: {value_2}')
+                    </code>
+                    <code>
+                        print("Value 1: " + str(value_1) + "\nValue 2: " + str(value_2))
+                    </code>
+
+                    <h2>input function</h2>
+                    <p>It is used for the user to enter values.</p>
+                    <code>
+                        variable = input("Enter a value: ")
+                    </code>
+
+                </article>
+            </section>
+
+            <section class="main-section" id="control_structures">
+                <header>Control structures</header>
+                <article>
+                    <p>There are multiple types of control structures.</p>
+                    <h2>if</h2>
+                    <p>Allows the program to branch based on the evaluation of an expression.</p>
+                    <code>
+                        if expression:
+                        <p class="tab">statement 1</p>
+                        elif:
+                        <p class="tab">statement 2</p>
+                        else:
+                        <p class="tab">statement 3</p>
+                    </code>
+
+                    <h2>while</h2>
+                    <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+                    <code>
+                        while condition == True:
+                        <p class="tab">statement 1</p>
+                        else:
+                        <p class="tab">statement 2</p>
+                    </code>
+
+                    <h2>for</h2>
+                    <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+                    <code>
+                        for i in alist:
+                        <p class="tab">print(i)</p>
+                    </code>
+                </article>
+            </section>
+
+            <section class="main-section" id="functions">
+                <header>Functions</header>
+                <article>
+                    <p>A function is a block of code which only runs when it is called.
+                        You can pass data, known as parameters, into a function.
+                        A function can return data as a result.
+                    </p>
+                    <code>
+                        def my_function(name):
+                        <p class="tab">print(f"Hello {name}")</p>
+                        <br>
+                        my_function()
+                    </code>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
